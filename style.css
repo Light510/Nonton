@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Agar elemen diatur secara vertikal */
+    align-items: center;    /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    background: #0b1522;
+}
+
+/* Elemen hati tetap terpusat */
+.heart {
+    height: 70px;
+    width: 70px;
+    background: red;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044; 
+}
+
+.heart::after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+
+/* Memastikan teks tetap terpusat */
+h1, h2, h6 {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Mogra", system-ui;
+    margin: 0;
+}
+
+/* Spasi di antara elemen teks */
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h6 {
+    margin-top: 5px;
+    color: rgba(170, 177, 184, 0.452);
+}

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1522;
+}
+
+.container{
+    margin: 100px 0 0px 150px;
+    width: 80%;
+    height: 90%;
+    display: flexbox;
+    justify-content:baseline;
+    align-content: center;
+    gap: 10px;
+    
+}
+
+.container img{
+    left: 4rem;
+    width: 20%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(81, 111, 156);
+    transition: all ease-in-out;
+}
+
+.container img:hover{
+    width: 30%;
+    height: 70%;
+    transform: scale(1.5);
+    object-fit: fill;
+}
+
+h1{
+    color: aliceblue;
+    font-family: "mogra";
+    justify-content: center;
+    align-content: center;
+    
+}
