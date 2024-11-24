@@ -6,7 +6,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #0b1522;
+    background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3JnaHR5cjdwNDNjbGF1YTJ3cmk5NWo1dGtnbmh2dDZpeTR1enBsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g5LHBNxr7OKkv095x9/giphy.gif');
+    background-size: cover;
+    background-position: 10px;
 }
 
 .container{
